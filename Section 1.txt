@@ -1,0 +1,16 @@
+import org.openqa.selenium.firefox.FirefoxDriver;   //importing the Selenium firefox driver
+
+
+//Class definition 
+
+public class SeleniumTests {
+    public static void main(String[] args) throws InterruptedException {
+        System.setProperty("webdriver.gecko.driver", "/Users/t33kt33k/Downloads/geckodriver");
+        FirefoxDriver driver = new FirefoxDriver();
+        driver.get("https://www.seleniumhq.org");
+        System.out.println(driver.getTitle());   //printing the title
+        Thread.sleep(1000);
+        driver.quit();
+    }
+
+}
